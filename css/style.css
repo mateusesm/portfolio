@@ -1,0 +1,118 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    background: #010101;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 0fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas:"h"
+                        "m"
+                        "f";
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/*------------------------------*/
+/*           M E N U            */
+/*------------------------------*/
+
+
+header.cabecalho {
+    grid-area: h;
+    background: #000000;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+}
+
+.logo {
+    margin-top: 1.5%;
+    margin-left: 5%;
+    float: left;
+    font-size: 2.5rem;
+    width: 100%;
+    font-weight: 500;
+}
+
+a.link-logo {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+.menu-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px 0px;
+}
+
+nav.menu ul {
+    list-style: none;
+    display: flex;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-left: 30%;
+    width: 50%;
+}
+
+nav.menu ul li {
+    margin-left: 10%;
+}
+
+nav.menu ul li a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+nav.menu ul li a span {
+    padding: 7px;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+
+nav.menu ul li a span:hover {
+    border: #ffffff solid;
+}
+
+/*------------------------------*/
+
+main.principal {
+    grid-area: m;
+    padding-top: 2%;
+    background-color: #ffffff;
+}
+
+.perfil {
+    width: 20%;
+    margin-left: 2.5%;
+    border-radius: 100%;
+
+}
+
+footer.rodape {
+    grid-area: f;
+    background: #000000;
+    padding: 2%;
+    font-size: 1.3rem;
+    text-align: center;
+    height: auto;
+    clear: both;
+}

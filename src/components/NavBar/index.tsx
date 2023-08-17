@@ -11,8 +11,7 @@ export const NavBar = () => {
             <span className='menu-item'><li>Vida Acadêmica</li></span>
             <span className='menu-item'><li>Experiências</li></span>
             <span className='menu-item'><li>Projetos pessoais</li></span>
-            <a className='menu-item' href="https://github.com/mateusesm" target='_blank'><li>GitHub</li></a>
-            <a className='menu-item' href="https://linkedin.com/in/mateusesm" target='_blank'><li>LinkedIn</li></a>
+            <span className='menu-item'><li>Entre em contato</li></span>
           </ul>
       </Nav>
   )

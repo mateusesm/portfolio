@@ -6,12 +6,12 @@ export const NavBar = () => {
       <Nav className='menu'>
         <Link to='/'><h1>Mateus Macedo</h1></Link>
           <ul className='menu-list'>
-            <span className='menu-item'><li>Home</li></span>
-            <span className='menu-item'><li>Sobre</li></span>
-            <span className='menu-item'><li>Vida Acadêmica</li></span>
-            <span className='menu-item'><li>Experiências</li></span>
-            <span className='menu-item'><li>Projetos pessoais</li></span>
-            <span className='menu-item'><li>Entre em contato</li></span>
+            <li>Home</li>
+            <li>Sobre</li>
+            <li>Vida Acadêmica</li>
+            <li>Experiências</li>
+            <li>Projetos pessoais</li>
+            <li>Entre em contato</li>
           </ul>
       </Nav>
   )

@@ -20,7 +20,7 @@ export const Nav = styled.nav`
     list-style: none;
 
     li {
-      margin: 1.6rem 0rem 0rem 1.6rem;
+      margin: 1.2rem 0rem 0rem 1.6rem;
       cursor: pointer;
       height: 2.2rem;
       transition: transform 0.3s;

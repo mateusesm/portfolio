@@ -43,12 +43,11 @@ export const ToggleButton = styled.div`
 
     button.active {
       display: flex;
-      margin-top: 1rem;
-      height: 20px;
+      margin-top: 0rem;
 
       div.first {
-        width: 80%;
-        transform: rotate(135deg);
+        width: 90%;
+        transform: rotate(135deg) translate(0.2rem, -0.3rem);
         transition: all 0.3s;
       }
 
@@ -57,7 +56,7 @@ export const ToggleButton = styled.div`
       }
 
       div.third {
-        width: 80%;
+        width: 90%;
         transform: rotate(-135deg) translate(0.4rem, 0.5rem);
         transition: all 0.3s;
       }

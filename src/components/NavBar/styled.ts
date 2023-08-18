@@ -7,12 +7,13 @@ export const Nav = styled.nav`
   justify-content: space-between;
   padding: 0rem 2rem 1rem 2rem;
   color: ${textColor};
+  transition: all 0.3s;
 
-  background-color: skyblue;
+  /*background-color: skyblue;*/
 
   @media(max-width: 950px) {
     padding-top: 0.6rem;
-
+  
     ul.menu-list {
       display: none;
     }
@@ -25,6 +26,7 @@ export const Nav = styled.nav`
       margin: 40rem 0rem 0rem -2rem;
       width: 100vw;
       height: 36rem;
+      filter: opacity(85%);
     }
   }
 
@@ -43,7 +45,7 @@ export const Nav = styled.nav`
       margin: 1.2rem 0rem 0rem 1.6rem;
       cursor: pointer;
       height: 2.2rem;
-      transition: transform 0.3s;
+      transition: all 0.3s;
 
       &:hover {
         transform: translateY(0.2rem);

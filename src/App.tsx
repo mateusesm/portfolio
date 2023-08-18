@@ -22,14 +22,25 @@ function App() {
 
   return (
     <>
-      <header className='header'>
+      <header className="header">
         <NavBar />
       </header>
-      <main>
-        <div>
-          <img src={dataUser.avatar_url} alt="Foto Mateus" />
-        </div>
+      <main className="main">
+        <section className="home">
+          <div>
+            <h1>Mateus Macedo</h1>
+          </div>
+          <aside>
+            <img src={dataUser.avatar_url} alt="Foto Mateus" />
+          </aside>
+        </section>
+        <section className="about"></section>
+        <section className="academic"></section>
+        <section className="experience"></section>
+        <section className="projects"></section>
+        <section className="contact"></section>
       </main>
+      <footer className="footer">&copy; Mateus Macedo | Alguns direitos reservados</footer>
     </>
   )
 }

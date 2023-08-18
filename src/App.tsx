@@ -1,7 +1,6 @@
-import { useRef, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 
 import { NavBar } from "./components/NavBar"
-import { Toggle } from "./components/Toggle"
 
 import axios from './utils/axios'
 
@@ -12,8 +11,7 @@ interface DataUser {
 
 function App() {
   const [dataUser, setDataUser] = useState({} as DataUser)
-  const toggleRef = useRef(null)
-
+  
   useEffect(() => {
     const getGitHubData = async () => {
       const { data } = await axios('/mateusesm')
@@ -22,15 +20,10 @@ function App() {
     getGitHubData()
   }, [])
 
-  const handleToggle = () => {
-    console.log('oi')
-  }
-
   return (
     <>
       <header className='header'>
         <NavBar />
-        <Toggle handleToggle={handleToggle} toggleRef={toggleRef} />
       </header>
       <main>
         <div>

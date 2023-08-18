@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { textColor } from '../../assets/colors';
+import { textColor } from '../../assets/colors'
 
 export const Nav = styled.nav`
   display: flex;
@@ -31,5 +31,13 @@ export const Nav = styled.nav`
       }
     }
    
+  }
+
+  .active {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    background-color: #121214;
   }
 `;

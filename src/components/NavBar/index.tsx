@@ -6,17 +6,17 @@ import { Nav } from "./styled"
 
 export const NavBar = () => {
   const toggleRef = useRef() as { current: HTMLButtonElement }
-  const navRef = useRef() as { current: HTMLElement }
+  const menuRef = useRef() as { current: HTMLUListElement }
   
   const handleToggle = () => {
     toggleRef.current.classList.toggle('active')
-    navRef.current.classList.toggle('active')
+    menuRef.current.classList.toggle('active')
   }
 
   return (
-      <Nav ref={navRef} className='menu'>
+      <Nav className='menu'>
         <Link to='/'><h1>Mateus Macedo</h1></Link>
-          <ul className='menu-list'>
+          <ul ref={menuRef} className='menu-list'>
             <li>Home</li>
             <li>Sobre</li>
             <li>Vida Acadêmica</li>

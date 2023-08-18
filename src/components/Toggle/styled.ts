@@ -2,12 +2,14 @@ import styled from 'styled-components'
 import { textColor, backgroundColor } from '../../assets/colors'
 
 export const ToggleButton = styled.div`
+  display: none;
+
+  @media(max-width: 950px) {
     display: block;
     align-items: center;
     justify-content: center;
     max-width: 40px;
     width: 100%;
-    margin: 0rem 2rem 0rem 2rem;
 
     button {
       display: flex;
@@ -40,23 +42,26 @@ export const ToggleButton = styled.div`
     }
 
     button.active {
-        display: flex;
-        margin-top: 1rem;
-    }
+      display: flex;
+      margin-top: 1rem;
+      height: 20px;
 
-    button.active div.first {
-      transform: rotate(135deg);
-      transition: all 0.3s;
-    }
+      div.first {
+        width: 80%;
+        transform: rotate(135deg);
+        transition: all 0.3s;
+      }
 
-    button.active div.second {
-      display: none;
-    }
+      div.second {
+        display: none;
+      }
 
-    button.active div.third {
-      width: 100%;
-      transform: rotate(-135deg) translate(0.6rem, 0.8rem);
-      transition: all 0.3s;
+      div.third {
+        width: 80%;
+        transform: rotate(-135deg) translate(0.4rem, 0.5rem);
+        transition: all 0.3s;
+      }
     }
+  }
 `
 

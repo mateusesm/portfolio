@@ -14,7 +14,6 @@ export const Nav = styled.nav`
   filter: opacity(90%);
 
   @media(max-width: 950px) {
-  
     ul.menu-list {
       opacity: 0;
       position: absolute;
@@ -23,6 +22,8 @@ export const Nav = styled.nav`
       flex-direction: column;
       justify-content: center;
       margin: 60rem 0rem 0rem -2rem;
+      padding-top: 20rem;
+      padding-bottom: 38rem;
       width: 100vw;
       height: 100vh;
       filter: opacity(90%);

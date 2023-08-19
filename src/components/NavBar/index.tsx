@@ -1,7 +1,7 @@
 import { useRef } from "react"
 import { Link } from "react-router-dom"
 
-import { Toggle } from "../Toggle"
+import { ToggleButton } from "../ToggleButton"
 import { Nav } from "./styled"
 
 export const NavBar = () => {
@@ -24,7 +24,7 @@ export const NavBar = () => {
             <li>Projetos pessoais</li>
             <li>Entre em contato</li>
           </ul>
-          <Toggle handleToggle={handleToggle} toggleRef={toggleRef} />
+          <ToggleButton handleToggle={handleToggle} toggleRef={toggleRef} />
       </Nav>
   )
 }

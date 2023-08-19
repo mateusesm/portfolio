@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { textColor, backgroundColor } from '../../assets/colors'
 
-export const ToggleButton = styled.div`
+export const ToggleContainer = styled.div`
   display: none;
 
   @media(max-width: 950px) {

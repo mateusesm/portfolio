@@ -57,7 +57,7 @@ export const ToggleButton = styled.div`
 
       div.third {
         width: 90%;
-        transform: rotate(-135deg) translate(0.4rem, 0.5rem);
+        transform: rotate(-135deg) translate(0.4rem, 0.6rem);
         transition: all 0.3s;
       }
     }

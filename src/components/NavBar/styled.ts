@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   padding: 0rem 2rem 1rem 2rem;
   color: ${textColor};
   transition: all 0.3s;
-  /*background-color: skyblue;*/
+  height: 5rem;
 
   @media(max-width: 950px) {
     padding-top: 0.6rem;

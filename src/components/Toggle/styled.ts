@@ -25,7 +25,7 @@ export const ToggleButton = styled.div`
         height: 0.2rem;
         background-color: ${textColor};
         border-radius: 1rem;
-        transition: all 0.3s;
+        transition: all 0.5s;
       }
 
       div.first {
@@ -42,13 +42,10 @@ export const ToggleButton = styled.div`
     }
 
     button.active {
-      display: flex;
-      margin-top: 0rem;
-
       div.first {
         width: 90%;
         transform: rotate(135deg) translate(0.2rem, -0.3rem);
-        transition: all 0.3s;
+        transition: all 0.5s;
       }
 
       div.second {
@@ -58,7 +55,7 @@ export const ToggleButton = styled.div`
       div.third {
         width: 90%;
         transform: rotate(-135deg) translate(0.4rem, 0.6rem);
-        transition: all 0.3s;
+        transition: all 0.5s;
       }
     }
   }

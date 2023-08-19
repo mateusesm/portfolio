@@ -2,30 +2,39 @@ import styled from 'styled-components'
 import { textColor } from '../../assets/colors'
 
 export const Nav = styled.nav`
+  position: fixed;  
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0rem 2rem 1rem 2rem;
+  padding: 0rem 2rem 0rem 2rem;
   color: ${textColor};
   transition: all 0.3s;
-  height: 5rem;
+  width: 100vw;
+  height: 4rem;
+  filter: opacity(90%);
 
   @media(max-width: 950px) {
-    padding-top: 0.6rem;
   
     ul.menu-list {
-      display: none;
-    }
-
-    ul.active {
+      opacity: 0;
       position: absolute;
       z-index: 1000;
       display: flex;
       flex-direction: column;
-      margin: 40rem 0rem 0rem -2rem;
+      justify-content: center;
+      margin: 60rem 0rem 0rem -2rem;
       width: 100vw;
-      height: 36rem;
-      filter: opacity(85%);
+      height: 100vh;
+      filter: opacity(90%);
+      transition: all 0.5s;
+
+      li {
+        margin: 0rem 0rem 5rem 0rem;
+      }
+    }
+
+    ul.active {
+      opacity: 1;
     }
   }
 

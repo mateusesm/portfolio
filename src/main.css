@@ -5,3 +5,9 @@
   font-family: arial, sans-serif;
   background-color: #fff;
 }
+
+body header.header {
+  display: flex;
+  width: 100vw;
+  margin-bottom: 4rem;
+}

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { textColor } from '../../assets/colors'
 
 export const Nav = styled.nav`
-  position: fixed;  
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;

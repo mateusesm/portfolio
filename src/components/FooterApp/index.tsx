@@ -6,7 +6,7 @@ export const FooterApp = () => {
     return data.getFullYear()
   }
   return (
-    <Footer>
+    <Footer className="footer">
       &copy; Feito com React & Styled-components por Mateus Macedo | Alguns direitos reservados | {generateDate()}
     </Footer>
   )

@@ -4,7 +4,7 @@ import { textColor, backgroundColor } from '../../assets/colors'
 export const ToggleContainer = styled.div`
   display: none;
 
-  @media(max-width: 950px) {
+  @media(max-width: 980px) {
     display: block;
     align-items: center;
     justify-content: center;

@@ -13,7 +13,7 @@ export const Nav = styled.nav`
   height: 4rem;
   filter: opacity(90%);
 
-  @media(max-width: 950px) {
+  @media(max-width: 980px) {
     ul.menu-list {
       opacity: 0;
       position: absolute;

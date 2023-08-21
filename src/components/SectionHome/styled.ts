@@ -12,14 +12,19 @@ export const Section = styled.section`
     justify-content: space-evenly;
     flex-direction: column;
     gap: 2rem;
-    width: 50%;
+    width: 55vw;
     margin-top: 1.6rem;
     margin-bottom: 1.6rem;
     padding: 0.5rem;
     color: ${textColor};
 
     h1 {
-      font-size: 5rem;
+      font-size: 7rem;
+      width: 42rem;
+    }
+
+    h1 div {
+      font-family: 'Handjet', cursive;
     }
 
     p {
@@ -35,7 +40,7 @@ export const Section = styled.section`
         padding: 0.4rem;
         border-top-left-radius: 25%;
         border-bottom-right-radius: 25%;
-        font-weight: bolder;
+        font-weight: bold;
       }
     }
   }
@@ -43,7 +48,8 @@ export const Section = styled.section`
   aside.right {
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 45vw;
+    padding: 0.5rem;
     margin-top: 1.6rem;
     margin-bottom: 1.6rem;
 

@@ -8,30 +8,39 @@ export const Section = styled.section`
   padding: 0rem 2rem 0rem 2rem;
 
   div.title {
-    background-color: red;
     display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 2rem;
     width: 50%;
     margin-top: 1.6rem;
     margin-bottom: 1.6rem;
     padding: 0.5rem;
-    justify-content: center;
+    color: ${textColor};
 
     h1 {
-      font-size: 3.5rem;
+      font-size: 5rem;
     }
 
-    @keyframe typewriter {
-      from {
-        width: 0%;
+    p {
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+
+      span {
+        font-style: italic;
       }
-      to {
-        width: 50%;
+
+      span.javascript {
+        background-color: yellow;
+        padding: 0.4rem;
+        border-top-left-radius: 25%;
+        border-bottom-right-radius: 25%;
+        font-weight: bolder;
       }
     }
   }
 
   aside.right {
-    background-color: blue;
     display: flex;
     justify-content: center;
     width: 50%;

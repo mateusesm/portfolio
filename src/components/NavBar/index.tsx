@@ -15,7 +15,7 @@ export const NavBar = () => {
 
   return (
       <Nav className='menu'>
-        <Link to='/'><h1>Mateus Macedo</h1></Link>
+        <Link to='/'><h1>&lt; Mateus Macedo /&gt;</h1></Link>
           <ul ref={menuRef} className='menu-list'>
             <li>Home</li>
             <li>Sobre</li>

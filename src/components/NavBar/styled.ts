@@ -13,7 +13,7 @@ export const Nav = styled.nav`
   width: 100vw;
   height: 4rem;
   background-color: ${backgroundColor};
-  filter: opacity(90%);
+  filter: opacity(95%);
   font-size: 1rem;
 
   @media(max-width: 980px) {
@@ -30,7 +30,7 @@ export const Nav = styled.nav`
       height: 100vh;
       background-color: ${backgroundColor};
       overflow-y: auto;
-      filter: opacity(90%);
+      filter: opacity(95%);
       transition: all 0.5s;
 
       li:first-child {
@@ -62,11 +62,12 @@ export const Nav = styled.nav`
       margin: 1.2rem 0rem 0rem 1.6rem;
       cursor: pointer;
       height: 2.2rem;
-      transition: all 0.3s;
+      transition: all 0.2s;
+      border: none;
 
       &:hover {
         transform: translateY(0.2rem);
-        border-bottom: 0.1rem solid ${textColor};
+        border-bottom: 0.2rem solid ${textColor};
       }
     }
    

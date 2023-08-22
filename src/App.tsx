@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 
 import { NavBar } from "./components/NavBar"
-import { SectionHome } from "./components/SectionHome"
+import { SectionHome } from "./components/Sections/SectionHome"
+import { SectionAbout } from "./components/Sections/SectionAbout"
 import { FooterApp } from "./components/FooterApp"
 
 import axios from './utils/axios'
@@ -28,7 +29,8 @@ function App() {
         <NavBar />
       </header>
       <main className="main">
-        <SectionHome avatar_url={dataUser.avatar_url} />
+        <SectionHome />
+        <SectionAbout avatar_url={dataUser.avatar_url} />
       </main>
       <FooterApp />
     </div>

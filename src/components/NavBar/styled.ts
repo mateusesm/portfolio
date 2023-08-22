@@ -1,23 +1,25 @@
 import styled from 'styled-components'
-import { textColor } from '../../assets/colors'
+import { backgroundColor, textColor } from '../../assets/colors'
 
 export const Nav = styled.nav`
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 1000;
   padding: 0rem 2rem 0rem 2rem;
   color: ${textColor};
   transition: all 0.3s;
   width: 100vw;
   height: 4rem;
+  background-color: ${backgroundColor};
   filter: opacity(90%);
+  font-size: 1rem;
 
   @media(max-width: 980px) {
     ul.menu-list {
       opacity: 0;
       position: absolute;
-      z-index: 1000;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -26,8 +28,14 @@ export const Nav = styled.nav`
       padding-bottom: 38rem;
       width: 100vw;
       height: 100vh;
+      background-color: ${backgroundColor};
+      overflow-y: auto;
       filter: opacity(90%);
       transition: all 0.5s;
+
+      li:first-child {
+        margin-top: 10rem;
+      }
 
       li {
         margin: 0rem 0rem 5rem 0rem;

@@ -8,6 +8,6 @@ export const Footer = styled.footer`
   align-items: center;
   justify-content: center;
   padding: 2.8rem 0rem;
-  width: 100vw;
+  width: 100%;
   font-size: 0.8rem;
 `

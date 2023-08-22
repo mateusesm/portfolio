@@ -2,35 +2,35 @@ import styled from 'styled-components'
 
 interface BaseAnimationProps {
   duration: string,
-  timingFunction: string,
+  timingfunction: string,
   delay: string,
-  iterationCount: string,
+  iterationcount: string,
   direction: string,
-  fillMode: string,
-  playState: string,
+  fillmode: string,
+  playstate: string,
   display: string,
   children: Element
 }
 
 const BaseAnimation = styled.div<BaseAnimationProps>`
   animation-duration: ${props => props.duration};  
-  animation-timing-function: ${props => props.timingFunction};      
+  animation-timing-function: ${props => props.timingfunction};      
   animation-delay: ${props => props.delay};  
-  animation-iteration-count: ${props => props.iterationCount};  
+  animation-iteration-count: ${props => props.iterationcount};  
   animation-direction: ${props => props.direction}; 
-  animation-fill-mode: ${props => props.fillMode};  
-  animation-play-state:  ${props => props.playState}; 
+  animation-fill-mode: ${props => props.fillmode};  
+  animation-play-state:  ${props => props.playstate}; 
   display: ${props => props.display};
 `;
 
 BaseAnimation.defaultProps = {  
   duration: '1s',
-  timingFunction: 'ease',
+  timingfunction: 'ease',
   delay: '0s',
-  iterationCount: '1',
+  iterationcount: '1',
   direction: 'normal',
-  fillMode: 'both',
-  playState: 'running',
+  fillmode: 'both',
+  playstate: 'running',
   display: 'block'
 };
 

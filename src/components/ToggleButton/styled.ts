@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { textColor, backgroundColor } from '../../assets/colors'
+import { textColor } from '../../assets/colors'
 
 export const ToggleContainer = styled.div`
   display: none;
@@ -18,7 +18,7 @@ export const ToggleContainer = styled.div`
       width: 100%;
       height: 34px;
       border: none;
-      background-color: ${backgroundColor};
+      background-color: transparent;
       cursor: pointer;
 
       div {

@@ -2,12 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: 'Roboto', sans-serif;
   background-color: #fff;
 }
 
+body div.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 1980px;
+}
+
 body header.header {
   display: flex;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 4rem;
+}
+
+body main.main {
+  display: flex;
+  justify-content: center;
 }

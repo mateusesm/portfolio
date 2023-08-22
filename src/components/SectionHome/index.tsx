@@ -1,6 +1,6 @@
 import { Section } from "./styled"
-import Typewriter from "../styled/Typewriter/styled"
-import Blink from "../styled/Blink/styled"
+import Typewriter from "../styledAnimations/Typewriter/styled"
+import Blink from "../styledAnimations/Blink/styled"
 
 type AvatarURL = {
   avatar_url: string
@@ -11,8 +11,8 @@ export const SectionHome = ({ avatar_url }: AvatarURL) => {
     <Section className="section-home">
       <div className="title">
         <h1>
-          <Typewriter duration="3s" timingFunction="steps(13)" iterationCount="infinite">
-            <Blink duration="900ms" timingFunction="steps(13)" iterationCount="infinite">
+          <Typewriter duration="3s" timingfunction="steps(13)" iterationcount="infinite">
+            <Blink duration="900ms" timingfunction="steps(13)" iterationcount="infinite">
               Mateus Macedo
             </Blink>
           </Typewriter>

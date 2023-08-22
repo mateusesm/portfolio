@@ -11,6 +11,11 @@ export const NavBar = () => {
   const handleToggle = () => {
     toggleRef.current.classList.toggle('active')
     menuRef.current.classList.toggle('active')
+    if (menuRef.current.classList.contains('active')) {
+      document.getElementsByTagName('body')[0].style.overflowY = 'hidden'
+    } else {
+      document.getElementsByTagName('body')[0].style.overflowY = 'auto'
+    }
   }
 
   return (

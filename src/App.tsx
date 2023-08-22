@@ -23,7 +23,7 @@ function App() {
   }, [])
 
   return (
-    <>
+    <div className="container">
       <header className="header">
         <NavBar />
       </header>
@@ -31,7 +31,7 @@ function App() {
         <SectionHome avatar_url={dataUser.avatar_url} />
       </main>
       <FooterApp />
-    </>
+    </div>
   )
 }
 

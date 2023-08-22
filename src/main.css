@@ -5,6 +5,8 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
 }
@@ -19,7 +21,6 @@ body div.container {
 body header.header {
   display: flex;
   width: 100%;
-  margin-bottom: 4rem;
 }
 
 body main.main {

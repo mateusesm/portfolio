@@ -7,14 +7,15 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
-  padding: 0rem 2rem 0rem 2rem;
+  padding: 0rem 4rem 0rem 4rem;
   color: ${textColor};
   transition: all 0.3s;
-  width: 100vw;
-  height: 4rem;
+  max-width: 124rem;
+  width: 100%;
+  height: 3.4rem;
   background-color: ${backgroundColor};
   filter: opacity(95%);
-  font-size: 1rem;
+  font-size: 0.8rem;
 
   @media(max-width: 980px) {
     ul.menu-list {
@@ -66,7 +67,7 @@ export const Nav = styled.nav`
       border: none;
 
       &:hover {
-        transform: translateY(0.2rem);
+        transform: translateY(0.1rem);
         border-bottom: 0.2rem solid ${textColor};
       }
     }

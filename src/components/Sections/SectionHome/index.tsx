@@ -1,3 +1,5 @@
+import { ChevronsDown } from 'lucide-react'
+
 import { Section } from "./styled"
 import Typewriter from "../../styledAnimations/Typewriter/styled"
 import Blink from "../../styledAnimations/Blink/styled"
@@ -14,7 +16,12 @@ export const SectionHome = () => {
           </Typewriter>
         </h1>
 
-        <p>Desenvolvedor Full-stack com foco em tecnologias <span className="javascript">JavaScript</span> para <span className="backend">back-end</span> & <span className="frontend">front-end</span></p>
+        <p>Desenvolvedor Full-stack com foco em tecnologias <span className="javascript">JavaScript</span> para back-end & front-end</p>
+       
+        <button>
+          Saiba mais
+          <ChevronsDown />
+        </button>
       </div>
     </Section>
   )

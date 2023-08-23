@@ -10,12 +10,16 @@ export const Header = styled.header`
   color: ${textColor};
   background-color: #fff;
   font-size: 0.8rem;
+  padding: 0rem 2rem 0rem 2rem;
 
   a {
-    padding: 0rem 0rem 0rem 4rem;
-    background: blue;
-    width: 25%;
-    color: #111;
+    display: block;
+    padding: 0.6rem 0rem;
+    color: ${textColor};
     text-decoration: none;
+
+    h1 {
+      font-size: 1.2rem;
+    }
   }
 `

@@ -41,6 +41,7 @@ export const Section = styled.section`
     border-radius: 8%;
     background-color: ${textColor};
     color: ${backgroundColor};
+    font-size: 0.8rem;
     cursor: pointer;
     transition: all 0.3s;
 

@@ -10,6 +10,7 @@ export const ToggleContainer = styled.div`
     justify-content: center;
     max-width: 40px;
     width: 100%;
+    padding: 1rem 0rem;
 
     button {
       display: flex;

@@ -1,33 +1,22 @@
-import { useRef } from "react"
-
-import { ToggleButton } from "../ToggleButton"
 import { Nav } from "./styled"
 
-export const NavBar = () => {
-  const toggleRef = useRef() as { current: HTMLButtonElement }
-  const menuRef = useRef() as { current: HTMLUListElement }
-  
-  const handleToggle = () => {
-    toggleRef.current.classList.toggle('active')
-    menuRef.current.classList.toggle('active')
-    if (menuRef.current.classList.contains('active')) {
-      document.getElementsByTagName('body')[0].style.overflowY = 'hidden'
-    } else {
-      document.getElementsByTagName('body')[0].style.overflowY = 'auto'
-    }
+interface NavParams {
+  menuRef: {
+    current: HTMLMenuElement
   }
+}
 
+export const NavBar = ({ menuRef }: NavParams) => {
   return (
-      <Nav className='menu'>
-        <ul ref={menuRef} className='menu-list'>
-          <li>Home</li>
-          <li>Sobre</li>
-          <li>Vida Acadêmica</li>
-          <li>Experiências</li>
-          <li>Projetos pessoais</li>
-          <li>Entre em contato</li>
-        </ul>
-        <ToggleButton handleToggle={handleToggle} toggleRef={toggleRef} />
-      </Nav>
+    <Nav ref={menuRef} className='menu'>
+      <ul className='menu-list'>
+        <li>Home</li>
+        <li>Sobre</li>
+        <li>Vida Acadêmica</li>
+        <li>Experiências</li>
+        <li>Projetos pessoais</li>
+        <li>Entre em contato</li>
+      </ul>
+    </Nav>
   )
 }

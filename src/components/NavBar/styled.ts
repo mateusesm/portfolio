@@ -7,7 +7,6 @@ export const Nav = styled.nav`
   justify-content: flex-end;
   transition: all 0.3s;
   width: 75%;
-  filter: opacity(95%);
 
   ul {
     display: flex;
@@ -47,6 +46,7 @@ export const Nav = styled.nav`
     background-color: ${backgroundColor};
     overflow-y: auto;
     transition: all 0.5s;
+    filter: opacity(95%);
 
     &.active {
       opacity: 1;

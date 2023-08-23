@@ -19,6 +19,9 @@ export const Section = styled.section`
   p {
     font-size: 1rem;
     margin-bottom: 4rem;
+    text-align: center;
+    line-height: 2.4rem;
+    padding: 0rem 1.6rem;
 
     span.javascript {
       background-color: yellow;
@@ -39,7 +42,7 @@ export const Section = styled.section`
     border-radius: 8%;
     background-color: ${textColor};
     color: ${backgroundColor};
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     cursor: pointer;
     transition: all 0.3s;
 
@@ -58,12 +61,19 @@ export const Section = styled.section`
 
   @media(max-width: 850px) {
     h1 {
-      font-size: 4rem;
-      width: 36rem;
+      font-size: 4.5rem;
+      width: 40rem;
     }
   }
 
-  @media(max-width: 650px) {
+  @media(max-width: 680px) {
+    h1 {
+      font-size: 3.5rem;
+      width: 32rem;
+    }
+  }
+
+  @media(max-width: 580px) {
     h1 {
       font-size: 3rem;
       width: 28rem;
@@ -75,12 +85,16 @@ export const Section = styled.section`
       font-size: 2.4rem;
       width: 22rem;
     }
+
+    p {
+      font-size: 0.8rem;
+    }
   }
 
   @media(max-width: 400px) {
     h1 {
       font-size: 2rem;
-      width: 18rem;
+      width: 18.5rem;
     }
   }
 `

@@ -6,7 +6,7 @@ type AvatarURL = {
 
 export const SectionAbout = ({ avatar_url }: AvatarURL) => {
   return (
-    <Section>
+    <Section className="section-about">
       <h2>Section About</h2>
       <aside className="right">
         <img src={avatar_url} alt="Foto Mateus" />

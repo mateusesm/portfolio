@@ -5,8 +5,7 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
+  width: 100vw;
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
 }

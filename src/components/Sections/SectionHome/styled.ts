@@ -9,10 +9,8 @@ export const Section = styled.section`
   width: 100%;
   height: 50rem;
   color: ${textColor};
-  background-color: green;
 
   h1 {
-    background-color: red;
     font-size: 8rem;
     max-width: 72rem;
     width: 100%;
@@ -53,7 +51,6 @@ export const Section = styled.section`
 
   @media(max-width: 1290px) {
     h1 {
-      background-color: red;
       font-size: 5.5rem;
       width: 50rem;
     }
@@ -61,7 +58,6 @@ export const Section = styled.section`
 
   @media(max-width: 850px) {
     h1 {
-      background-color: red;
       font-size: 4rem;
       width: 36rem;
     }
@@ -69,7 +65,6 @@ export const Section = styled.section`
 
   @media(max-width: 650px) {
     h1 {
-      background-color: red;
       font-size: 3rem;
       width: 28rem;
     }
@@ -77,7 +72,6 @@ export const Section = styled.section`
 
   @media(max-width: 490px) {
     h1 {
-      background-color: red;
       font-size: 2.4rem;
       width: 22rem;
     }
@@ -85,7 +79,6 @@ export const Section = styled.section`
 
   @media(max-width: 400px) {
     h1 {
-      background-color: red;
       font-size: 2rem;
       width: 18rem;
     }

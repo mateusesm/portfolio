@@ -6,6 +6,7 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  max-width: 124rem;
   width: 100%;
   color: ${textColor};
   background-color: #fff;

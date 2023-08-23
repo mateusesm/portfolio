@@ -19,7 +19,7 @@ export const Section = styled.section`
       border-radius: 50%;
       border-top-right-radius: 1%;
       border-bottom-left-radius: 1%;
-      width: 20rem;
+      width: 10rem;
       box-shadow: 4rem 1rem 0rem ${textColor};
     }
   }

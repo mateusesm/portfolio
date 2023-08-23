@@ -7,7 +7,6 @@ import Blink from "../../styledAnimations/Blink/styled"
 export const SectionHome = () => {
   return (
     <Section className="section-home">
-      <div className="title">
         <h1>
           <Typewriter duration="3s" timingfunction="steps(14)">
             <Blink duration="900ms" timingfunction="steps(14)" iterationcount="infinite">
@@ -22,7 +21,6 @@ export const SectionHome = () => {
           Saiba mais
           <ChevronsDown />
         </button>
-      </div>
     </Section>
   )
 }

@@ -10,21 +10,3 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
 }
-
-body div.container {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  max-width: 1980px;
-}
-
-body header.header {
-  display: flex;
-  width: 100%;
-}
-
-body main.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}

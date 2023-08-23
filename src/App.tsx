@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 
-import { NavBar } from "./components/NavBar"
+import { ContainerApp } from "./components/ContainerApp/styled"
+import { HeaderApp } from "./components/HeaderApp"
+import { MainApp } from "./components/MainApp/styled"
 import { SectionHome } from "./components/Sections/SectionHome"
 import { SectionAbout } from "./components/Sections/SectionAbout"
 import { FooterApp } from "./components/FooterApp"
@@ -24,16 +26,14 @@ function App() {
   }, [])
 
   return (
-    <div className="container">
-      <header className="header">
-        <NavBar />
-      </header>
-      <main className="main">
+    <ContainerApp className="container">
+      <HeaderApp />
+      <MainApp className="main">
         <SectionHome />
         <SectionAbout avatar_url={dataUser.avatar_url} />
-      </main>
+      </MainApp>
       <FooterApp />
-    </div>
+    </ContainerApp>
   )
 }
 

@@ -3,24 +3,52 @@ import { textColor } from '../../../assets/colors'
 
 export const Section = styled.section`
   display: flex;
-  width: 90%;
-  padding: 0rem 1rem 0rem 1rem;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10rem 0rem;
 
-  aside.right {
+  div.container-about {
     display: flex;
+    align-items: center;
     justify-content: center;
-    width: 40%;
-    padding: 0.5rem;
-    margin-top: 1.6rem;
-    margin-bottom: 1.6rem;
+    gap: 4rem;
 
-    img {
+    div.image-left {
       display: block;
-      border-radius: 50%;
-      border-top-right-radius: 1%;
-      border-bottom-left-radius: 1%;
-      width: 10rem;
-      box-shadow: 4rem 1rem 0rem ${textColor};
+      width: 25%;
+      padding: 0.5rem;
+
+      img {
+        display: block;
+        border-radius: 50%;
+        width: 20rem;
+      }
     }
+
+    aside.text-right {
+      width: 40%;
+      color: ${textColor};
+
+      h2 {
+        width: 60%;
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
+        border-bottom: 1rem solid yellow;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 2rem;
+        text-align: justify;
+      }
+    }
+  }
+
+  div.time-line {
+    color: #fff;
+    width: 70%;
+    margin: 4rem 0rem 4rem 0rem;
+    background-color: ${textColor};
   }
 `

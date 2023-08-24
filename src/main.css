@@ -11,3 +11,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
 }
+
+body p {
+  line-height: 2.4rem;
+}

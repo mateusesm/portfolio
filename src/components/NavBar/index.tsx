@@ -12,7 +12,6 @@ export const NavBar = ({ menuRef }: NavParams) => {
       <ul className='menu-list'>
         <li>Home</li>
         <li>Sobre</li>
-        <li>Vida Acadêmica</li>
         <li>Experiências</li>
         <li>Projetos pessoais</li>
         <li>Entre em contato</li>

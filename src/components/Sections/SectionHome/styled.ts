@@ -7,7 +7,8 @@ export const Section = styled.section`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 50rem;
+  margin-top: 3rem;
+  padding: 12rem 0rem;
   color: ${textColor};
 
   h1 {
@@ -20,7 +21,6 @@ export const Section = styled.section`
     font-size: 1rem;
     margin-bottom: 4rem;
     text-align: center;
-    line-height: 2.4rem;
     padding: 0rem 1.6rem;
 
     span.javascript {

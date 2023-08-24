@@ -7,10 +7,16 @@ type AvatarURL = {
 export const SectionAbout = ({ avatar_url }: AvatarURL) => {
   return (
     <Section className="section-about">
-      <h2>Section About</h2>
-      <aside className="right">
-        <img src={avatar_url} alt="Foto Mateus" />
-      </aside>
+      <div className="container-about">
+        <div className="image-left">
+          <img src={avatar_url} alt="Foto Mateus" />
+        </div>
+        <aside className="text-right">
+          <h2>Sobre mim</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente soluta, odit velit esse minima, eaque ipsam repellat ea ad aspernatur eveniet neque quidem. Accusamus quidem id illo qui dolores facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </aside>
+      </div>
+      <div className="time-line">Time line</div>
     </Section>
   )
 }

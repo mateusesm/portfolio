@@ -52,14 +52,21 @@ export const Section = styled.section`
     }
   }
 
-  @media(max-width: 1290px) {
+  @media(max-width: 1300px) {
+    h1 {
+      font-size: 7rem;
+      width: 64rem;
+    }
+  }
+
+  @media(max-width: 1150px) {
     h1 {
       font-size: 5.5rem;
       width: 50rem;
     }
   }
 
-  @media(max-width: 850px) {
+  @media(max-width: 900px) {
     h1 {
       font-size: 4.5rem;
       width: 40rem;

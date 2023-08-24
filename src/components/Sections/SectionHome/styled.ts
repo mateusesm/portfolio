@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { backgroundColor, textColor } from '../../../assets/colors'
+import { backgroundColor, detailColor, textColor } from '../../../assets/colors'
 
 export const Section = styled.section`
   display: flex;
@@ -24,7 +24,7 @@ export const Section = styled.section`
     padding: 0rem 1.6rem;
 
     span.javascript {
-      background-color: yellow;
+      background-color: ${detailColor};
       padding: 0.4rem;
       border-top-left-radius: 25%;
       border-bottom-right-radius: 25%;

@@ -1,12 +1,12 @@
 import styled from 'styled-components'
-import { textColor } from '../../../assets/colors'
+import { backgroundColor, detailColor, textColor } from '../../../assets/colors'
 
 export const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 10rem 0rem;
+  padding: 0rem 0rem;
 
   div.container-about {
     display: flex;
@@ -34,7 +34,7 @@ export const Section = styled.section`
         width: 60%;
         font-size: 2.8rem;
         margin-bottom: 2rem;
-        border-bottom: 1rem solid yellow;
+        border-bottom: 1rem solid ${detailColor};
       }
 
       p {
@@ -45,10 +45,68 @@ export const Section = styled.section`
     }
   }
 
-  div.time-line {
-    color: #fff;
+  div.container-time-line {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 70%;
-    margin: 4rem 0rem 4rem 0rem;
-    background-color: ${textColor};
+    margin-top: 1.6rem;
+
+    h3 {
+      padding: 0.5rem 0rem;
+    }
+
+    div.container-years {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+
+      div {
+        font-size: 0.8rem;
+        color: ${textColor};
+      }
+    }
+
+    div.time-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      color: ${textColor};
+      width: 100%;
+      background-color: ${backgroundColor};
+      border: 0.1rem solid ${textColor};
+
+      div.ball {
+        background-color: ${textColor};
+        border: 0.1rem solid ${textColor};
+        border-radius: 50%;
+        padding: 0.1rem;
+      }
+  }
+
+    div.cards-time-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      gap: 1rem;
+
+      div.card {
+        margin-top: 1rem;
+        padding: 0.4rem;
+        border: 0.1rem solid ${textColor};
+        
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+
+        p {
+          font-size: 0.8rem;
+          line-height: 1.2rem;
+        }
+      }
+    }
   }
 `

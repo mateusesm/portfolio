@@ -1,2 +1,3 @@
 export const textColor = '#111111';
-export const backgroundColor = '#ffffff';
+export const backgroundColor = '#FFFFFF';
+export const detailColor = '#FFFF00'

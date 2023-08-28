@@ -120,7 +120,7 @@ export const Section = styled.section`
       align-items: center;
       justify-content: space-around;
       width: 100%;
-      padding: 0rem 1.2rem;
+      padding: 0rem 0.5rem;
 
       div {
         font-size: 0.8rem;
@@ -256,6 +256,7 @@ export const Section = styled.section`
         div.container-years {
           flex-direction: column;
           width: 8%;
+          padding: 0rem 1.2rem;
         }
 
         div.time-line {

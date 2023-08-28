@@ -52,6 +52,7 @@ export const Section = styled.section`
     h3 {
       text-align: center;
       padding: 0.5rem 0rem;
+      margin-bottom: 0.5rem;
     }
 
     div.container-time-line {
@@ -119,6 +120,7 @@ export const Section = styled.section`
       align-items: center;
       justify-content: space-around;
       width: 100%;
+      padding: 0rem 1.2rem;
 
       div {
         font-size: 0.8rem;
@@ -134,6 +136,7 @@ export const Section = styled.section`
       width: 100%;
       background-color: ${backgroundColor};
       border: 0.1rem solid ${textColor};
+      padding: 0rem 0.2rem;
 
       div.ball {
         background-color: ${textColor};
@@ -149,9 +152,11 @@ export const Section = styled.section`
       justify-content: space-around;
       width: 100%;
       gap: 1rem;
+      padding: 0rem 0.4rem;
 
       div.card {
         margin-top: 0.5rem;
+        
         padding: 0.4rem;
         border: 0.1rem solid ${textColor};
         
@@ -232,7 +237,12 @@ export const Section = styled.section`
       flex-direction: column;
 
       aside.text-right {
-        width: 80%;
+        width: 90%;
+
+        h2 {
+          text-align: center;
+          width: 100%;
+        }
       }
     }
 
@@ -256,8 +266,7 @@ export const Section = styled.section`
         div.cards-time-line {
           flex-direction: column;
           width: 60%;
-          margin-left: 0.5rem;
-
+        
           div.card {
             p {
               font-size: 0.8rem;
@@ -276,26 +285,35 @@ export const Section = styled.section`
 
         div.container-years {
           flex-direction: column;
-          width: 10%;
         }
 
         div.time-line {
           flex-direction: column;
-          width: 4%;
         }
 
         div.cards-time-line {
           flex-direction: column;
-          width: 60%;
-          margin-left: 0.5rem;
-
+          
         }
       }
     }
   }
 
-  @media(max-width: 600px) {
+  @media(max-width: 450px) {
 
-    
+    div.container-about {
+
+      div.image-left {
+        img {
+          width: 15rem;
+        }
+      }
+
+      aside.text-right {
+        h2 {
+          font-size: 2rem;
+        }
+      }
+    }
   }
 `

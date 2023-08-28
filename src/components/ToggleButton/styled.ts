@@ -60,5 +60,25 @@ export const ToggleContainer = styled.div`
       }
     }
   }
+
+  @media(max-width: 490px) {
+    button {
+      height: 30px;
+
+      div {
+        height: 0.2rem;
+      }
+    }
+
+    button.active {
+      div.first {
+        transform: rotate(135deg) translate(0.3rem, -0.3rem); 
+      }
+
+      div.third {
+        transform: rotate(-135deg) translate(0.2rem, 0.4rem);
+      }
+    }
+  }
 `
 

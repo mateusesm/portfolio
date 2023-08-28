@@ -24,4 +24,12 @@ export const Header = styled.header`
       font-size: 1.2rem;
     }
   }
+
+  @media(max-width: 490px) {
+    a {
+      h1 {
+        font-size: 1rem;
+      }
+    }
+  }
 `

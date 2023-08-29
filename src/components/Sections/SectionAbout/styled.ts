@@ -6,7 +6,8 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 0rem 0rem;
+  padding: 4rem 0rem;
+  background-color: green;
 
   div.container-about { 
     display: flex;
@@ -155,15 +156,12 @@ export const Section = styled.section`
       padding: 0rem 0.4rem;
 
       div.card {
+        width: 20%;
         margin-top: 0.5rem;
         
         padding: 0.4rem;
         border: 0.1rem solid ${textColor};
-        
-        border-top-left-radius: 10%;
-        border-top-right-radius: 10%;
-        border-bottom-left-radius: 10%;
-        border-bottom-right-radius: 10%;
+        border-radius: 10%;
 
         p {
           font-size: 0.8rem;
@@ -189,10 +187,9 @@ export const Section = styled.section`
 
   @media(max-width: 910px) {
     div.container-about {
+      margin: 0rem 0.4rem;
 
       aside.text-right {
-        width: 60%;
-
         h2 {
           width: 80%;
         }
@@ -209,10 +206,9 @@ export const Section = styled.section`
     div.container-about {
 
       aside.text-right {
-        width: 60%;
 
         h2 {
-          width: 90%;
+          width: 100%;
         }
       }
     }
@@ -241,7 +237,6 @@ export const Section = styled.section`
 
         h2 {
           text-align: center;
-          width: 100%;
         }
       }
     }
@@ -251,7 +246,7 @@ export const Section = styled.section`
       
       div.container-time-line {
         flex-direction: row;
-        width: 70%;
+        width: 90%;
 
         div.container-years {
           flex-direction: column;
@@ -266,9 +261,10 @@ export const Section = styled.section`
 
         div.cards-time-line {
           flex-direction: column;
-          width: 60%;
         
           div.card {
+            width: 100%;
+            padding: 2rem 1rem;
             p {
               font-size: 0.8rem;
             }

@@ -8,6 +8,7 @@ import { SectionAbout } from "./components/Sections/SectionAbout"
 import { FooterApp } from "./components/FooterApp"
 
 import axios from './utils/axios'
+import { SectionExperiences } from "./components/Sections/SectionExperiences"
 
 interface DataUser {
   avatar_url: string,
@@ -31,6 +32,7 @@ function App() {
       <MainApp className="main">
         <SectionHome />
         <SectionAbout avatar_url={dataUser.avatar_url} />
+        <SectionExperiences />
       </MainApp>
       <FooterApp />
     </ContainerApp>

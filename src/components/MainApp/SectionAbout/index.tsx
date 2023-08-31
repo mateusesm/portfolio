@@ -20,51 +20,6 @@ export const SectionAbout = ({ avatar_url }: AvatarURL) => {
       </div>
       <div className="container-travel">
         <h3>Um pouco da minha trajetória</h3>
-        <div className="container-time-line">
-          <div className="container-years">
-            <div>2018</div>
-            <div>2019</div>
-            <div>2020</div>
-            <div>2021</div>
-            <div>2022</div>
-            <div>2023</div>
-            <div>2024</div>
-          </div>
-          <div className="time-line">
-            <div className="ball"></div>
-            <div className="ball"></div>
-            <div className="ball"></div>
-            <div className="ball"></div>
-            <div className="ball"></div>
-            <div className="ball"></div>
-            <div className="ball"></div>
-          </div>
-          <div className="cards-time-line">
-            <div className="card">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              </p>
-            </div>
-            <div className="card">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div className="card">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div className="card">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div className="card">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div className="card">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div className="card">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </div>
         <TimeLine />
       </div>
     </Section>

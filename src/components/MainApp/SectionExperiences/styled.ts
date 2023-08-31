@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { detailColor } from '../../../../assets/colors'
+import { detailColor } from '../../../assets/colors'
 
 export const Section = styled.section`
   display: flex;

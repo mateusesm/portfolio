@@ -5,9 +5,9 @@ import { ContainerApp } from "./components/ContainerApp/styled"
 import { HeaderApp } from "./components/HeaderApp"
 import { MainApp } from "./components/MainApp/styled"
 
-import { SectionHome } from "./components/MainApp/Sections/SectionHome"
-import { SectionAbout } from "./components/MainApp/Sections/SectionAbout"
-import { SectionExperiences } from "./components/MainApp/Sections/SectionExperiences"
+import { SectionHome } from "./components/MainApp/SectionHome"
+import { SectionAbout } from "./components/MainApp/SectionAbout"
+import { SectionExperiences } from "./components/MainApp/SectionExperiences"
 
 import { FooterApp } from "./components/FooterApp"
 

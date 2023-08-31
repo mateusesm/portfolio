@@ -1,5 +1,7 @@
 import { Section } from "./styled"
 
+import { TimeLine } from "../TimeLine"
+
 type AvatarURL = {
   avatar_url: string
 }
@@ -63,6 +65,7 @@ export const SectionAbout = ({ avatar_url }: AvatarURL) => {
             </div>
           </div>
         </div>
+        <TimeLine />
       </div>
     </Section>
   )

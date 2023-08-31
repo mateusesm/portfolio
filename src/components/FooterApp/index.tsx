@@ -2,8 +2,7 @@ import { Footer } from "./styled"
 
 export const FooterApp = () => {
   const generateDate = (): number => {
-    const data = new Date()
-    return data.getFullYear()
+    return new Date().getFullYear()
   }
   return (
     <Footer className="footer">

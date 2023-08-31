@@ -120,7 +120,11 @@ export const Section = styled.section`
 
       aside.text-right {
         h2 {
-          font-size: 2rem;
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: 0.8rem;
         }
       }
     }

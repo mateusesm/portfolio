@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { textColor } from '../../assets/colors'
+import { textColor } from '../../../assets/colors'
 
 export const ToggleContainer = styled.div`
   display: none;

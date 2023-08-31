@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { backgroundColor, detailColor, textColor } from '../../../assets/colors'
+import { backgroundColor, detailColor, textColor } from '../../../../assets/colors'
 
 export const Section = styled.section`
   display: flex;
@@ -9,7 +9,8 @@ export const Section = styled.section`
   padding: 4rem 0rem;
   background-color: green;
 
-  div.container-about { 
+  div.container-about {
+    width: 100%; 
     display: flex;
     align-items: center;
     justify-content: center;

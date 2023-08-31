@@ -1,8 +1,8 @@
 import { ChevronsDown } from 'lucide-react'
 
 import { Section } from "./styled"
-import Typewriter from "../../styledAnimations/Typewriter/styled"
-import Blink from "../../styledAnimations/Blink/styled"
+import Typewriter from "../../../styledAnimations/Typewriter/styled"
+import Blink from "../../../styledAnimations/Blink/styled"
 
 export const SectionHome = () => {
   return (

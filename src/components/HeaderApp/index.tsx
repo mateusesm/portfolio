@@ -2,8 +2,8 @@ import { useRef } from "react"
 import { Link } from "react-router-dom"
 
 import { Header } from "./styled"
-import { NavBar } from '../NavBar'
-import { ToggleButton } from "../ToggleButton"
+import { NavBar } from './NavBar'
+import { ToggleButton } from "./ToggleButton"
 
 export const HeaderApp = () => {
   const toggleRef = useRef() as { current: HTMLButtonElement }

@@ -4,15 +4,16 @@ import { textColor, backgroundColor } from '../../../assets/colors'
 export const ContainerTimeLine = styled.div`
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  width: 70%;
+  flex-direction: row;
+  width: 80%;
 
   div.container-years {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
-    padding: 0rem 0.5rem;
+    width: 4%;
+    padding: 0rem 0.4rem;
 
     div {
       font-size: 0.8rem;
@@ -22,13 +23,13 @@ export const ContainerTimeLine = styled.div`
 
   div.time-line {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     color: ${textColor};
-    width: 100%;
+    width: 1%;
     background-color: ${backgroundColor};
     border: 0.1rem solid ${textColor};
-    padding: 0rem 0.2rem;
 
     div.ball {
       background-color: ${textColor};
@@ -40,87 +41,69 @@ export const ContainerTimeLine = styled.div`
 
   div.cards-time-line {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-around;
     width: 100%;
     gap: 1rem;
     padding: 0rem 0.4rem;
 
     div.card {
-      width: 20%;
-      margin-top: 0.5rem;
+      width: 100%;
         
-      padding: 0.4rem;
+      padding: 2.4rem 1rem;
       border: 0.1rem solid ${textColor};
-      border-radius: 10%;
+      border-radius: 0.4rem;
 
       p {
         font-size: 0.8rem;
-        line-height: 1.2rem;
+        line-height: 1.6rem;
       }
     }
   }
 
-  @media(max-width: 1110px) {
+  @media(max-width: 980px) {
     width: 90%;
-  }
 
-  @media(max-width: 910px) {
-    width: 100%;
-  }
+    div.container-years {
+      width: 6%;
+      padding: 0rem 1rem;
+    }
 
-  @media(max-width: 830px) {
-    div.cards-time-line {
-      div.card {
-        padding: 0.2rem;
-        p {
-          font-size: 0.6rem;
-          line-height: 1.2rem;
-        }
-      }
+    div.time-line {
+      width: 1.6%;
     }
   }
-
   @media(max-width: 730px) {
-    flex-direction: row;
     width: 90%;
 
     div.container-years {
-      flex-direction: column;
       width: 8%;
-      padding: 0rem 1.2rem;
     }
 
     div.time-line {
-      flex-direction: column;
       width: 2%;
-    }
-
-    div.cards-time-line {
-      flex-direction: column;
-        
-      div.card {
-        width: 100%;
-        padding: 2rem 1rem;
-        p {
-          font-size: 0.8rem;
-        }
-      }
-    }
-   
+    } 
   }
 
-  @media(max-width: 600px) {
+  @media(max-width: 560px) {
+    width: 100%;
     div.container-years {
-      flex-direction: column;
+      width: 10%;
     }
 
     div.time-line {
-      flex-direction: column;
+      width: 2.6%;
+    } 
+  }
+
+  @media(max-width: 400px) {
+
+    div.container-years {
+      width: 14%;
     }
 
-    div.cards-time-line {
-      flex-direction: column;
-    }
+    div.time-line {
+      width: 3.6%;
+    } 
   }
 `

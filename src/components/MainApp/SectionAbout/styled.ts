@@ -6,8 +6,7 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 4rem 0rem;
-  background-color: green;
+  padding-top: 10rem;
 
   div.container-about {
     width: 100%; 
@@ -49,7 +48,7 @@ export const Section = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 1.6rem;
+    margin-top: 4rem;
 
     h3 {
       text-align: center;

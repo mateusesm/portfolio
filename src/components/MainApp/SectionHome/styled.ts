@@ -8,9 +8,8 @@ export const Section = styled.section`
   justify-content: center;
   width: 100%;
   margin-top: 3rem;
-  padding: 12rem 0rem 4rem 0rem;
+  padding-top: 10rem;
   color: ${textColor};
-  background-color: blue;
 
   h1 {
     font-size: 8rem;

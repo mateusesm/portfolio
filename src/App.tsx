@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react"
+import { BrowserRouter } from "react-router-dom"
 
 import { ContainerApp } from "./components/ContainerApp/styled"
 
 import { HeaderApp } from "./components/HeaderApp"
 import { MainApp } from "./components/MainApp/styled"
 
-import { SectionHome } from "./components/MainApp/SectionHome"
-import { SectionAbout } from "./components/MainApp/SectionAbout"
-import { SectionExperiences } from "./components/MainApp/SectionExperiences"
+import { Rotas } from "./routes"
 
 import { FooterApp } from "./components/FooterApp"
 
@@ -31,13 +30,13 @@ function App() {
 
   return (
     <ContainerApp className="container">
-      <HeaderApp />
-      <MainApp className="main">
-        <SectionHome />
-        <SectionAbout avatar_url={dataUser.avatar_url} />
-        <SectionExperiences />
-      </MainApp>
-      <FooterApp />
+      <BrowserRouter>
+        <HeaderApp />
+        <MainApp className="main">
+          <Rotas avatar_url={dataUser.avatar_url} />
+        </MainApp>
+        <FooterApp />
+      </BrowserRouter>
     </ContainerApp>
   )
 }

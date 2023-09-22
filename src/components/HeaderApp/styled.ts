@@ -15,6 +15,7 @@ export const Header = styled.header`
   filter: opacity(95%);
 
   a {
+    background-color: red;
     display: block;
     padding: 0.6rem 0rem;
     color: ${textColor};

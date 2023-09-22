@@ -2,7 +2,7 @@ import { Section } from "./styled"
 
 import { TimeLine } from "../TimeLine"
 
-type AvatarURL = {
+export type AvatarURL = {
   avatar_url: string
 }
 

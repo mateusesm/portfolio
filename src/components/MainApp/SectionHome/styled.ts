@@ -7,8 +7,8 @@ export const Section = styled.section`
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 3rem;
-  padding-top: 10rem;
+  height: 100vh;
+  
   color: ${textColor};
 
   h1 {

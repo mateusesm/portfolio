@@ -8,7 +8,7 @@ export const Footer = styled.footer`
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2.8rem 0rem;
+  padding: 3rem 2rem;
   width: 100%;
   font-size: 0.8rem;
 `

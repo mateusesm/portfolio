@@ -3,7 +3,7 @@ import { ToggleContainer } from "./styled"
 interface ToggleParams {
   handleToggle: () => void,
   toggleRef: {
-    current: HTMLButtonElement | null
+    current: HTMLButtonElement
   }
 }
 

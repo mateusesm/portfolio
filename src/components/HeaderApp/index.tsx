@@ -21,7 +21,7 @@ export const HeaderApp = () => {
   return (
     <Header className="header">
       <a href='/'><h1>&lt; Mateus Macedo /&gt;</h1></a>
-      <NavBar menuRef={menuRef} handleToggle={handleToggle} />
+      <NavBar menuRef={menuRef} toggleRef={toggleRef} />
       <ToggleButton handleToggle={handleToggle} toggleRef={toggleRef} />
     </Header>
   )

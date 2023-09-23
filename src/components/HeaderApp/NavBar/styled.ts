@@ -40,7 +40,7 @@ export const Nav = styled.nav`
     opacity: 0;
     top: 0;
     left: 0;
-    margin-top: 4rem;
+    margin-top: 3rem;
     width: 100%;
     height: 100vh;
     background-color: ${backgroundColor};

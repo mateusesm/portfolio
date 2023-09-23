@@ -16,7 +16,10 @@ export const NavBar = ({ menuRef, toggleRef }: NavParams) => {
     if (toggleRef.current.classList.contains('active') && menuRef.current.classList.contains('active')) {
       toggleRef.current.classList.remove('active')
       menuRef.current.classList.remove('active')
-    } 
+    }
+    if (document.getElementsByTagName('body')[0].style.overflowY === 'hidden') {
+      document.getElementsByTagName('body')[0].style.overflowY = 'auto'
+    }
   }
 
   return (

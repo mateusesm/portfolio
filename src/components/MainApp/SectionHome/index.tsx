@@ -15,7 +15,7 @@ export const SectionHome = () => {
           </Typewriter>
         </h1>
 
-        <p>Desenvolvedor Full-stack com foco em tecnologias <span className="javascript">JavaScript</span> para back-end & front-end</p>
+        <p>Desenvolvedor Full Stack com foco em tecnologias <span className="javascript">JavaScript</span> para back-end & front-end</p>
        
         <button>
           Saiba mais

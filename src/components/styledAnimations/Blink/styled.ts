@@ -13,7 +13,7 @@ const BlinkAnimation = keyframes`
 
  const Blink = styled(BaseAnimation)`
   animation-name: ${BlinkAnimation};
-  border-right: 0.8rem solid #000;
+  border-right: 0.8rem solid ${textColor};
  `;
 
  export default Blink

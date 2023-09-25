@@ -8,6 +8,7 @@ export const Header = styled.header`
   position: fixed;
   max-width: 122rem;
   width: 100%;
+  height: 3rem;
   color: ${textColor};
   background-color: ${backgroundColor};
   font-size: 0.8rem;
@@ -16,9 +17,9 @@ export const Header = styled.header`
 
   a {
     display: block;
-    padding: 0.4rem 0rem;
     color: ${textColor};
     text-decoration: none;
+    padding: 0.4rem 0rem;
 
     h1 {
       font-size: 1.2rem;

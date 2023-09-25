@@ -16,7 +16,7 @@ export const Nav = styled.nav`
     padding-top: 0.8rem;
     height: auto;
   
-    li {
+    a {
       font-size: 0.8rem;
       margin-left: 1.6rem;
       padding: 0rem 0.2rem;

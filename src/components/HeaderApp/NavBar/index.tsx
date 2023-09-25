@@ -14,8 +14,8 @@ interface NavParams {
 export const NavBar = ({ menuRef, toggleRef }: NavParams) => {
   const location = useLocation()
 
-  const handleBorderBottom = () => {
-    alert(location.pathname)
+  const handleBorderBottom = (event: any) => {
+    const routeName = event.target.textContent
   }
 
   const handleCloseToggle = () => {
@@ -28,17 +28,17 @@ export const NavBar = ({ menuRef, toggleRef }: NavParams) => {
     }
   }
 
-  const handleClickMenu = (event) => {
-    handleBorderBottom()
+  const handleClickMenu = (event: any) => {
+    handleBorderBottom(event)
     handleCloseToggle()
   }
 
   return (
     <Nav ref={menuRef} className='menu'>
       <ul className='menu-list'>
-        <Link onClick={(event) => handleClickMenu(event)} to='/'><li>Home</li></Link>
-        <Link onClick={(event) => handleClickMenu(event)} to='/sobre'><li>Sobre</li></Link>
-        <Link onClick={(event) => handleClickMenu(event)} to='/experiencias'><li>Experiências</li></Link>
+        <Link className='home' onClick={(event) => handleClickMenu(event)} to='/'><li>Home</li></Link>
+        <Link className='sobre' onClick={(event) => handleClickMenu(event)} to='/sobre'><li>Sobre</li></Link>
+        <Link className='experiencias' onClick={(event) => handleClickMenu(event)} to='/experiencias'><li>Experiências</li></Link>
         <Link to='#'><li>Projetos pessoais</li></Link>
         <Link to='#'><li>Entre em contato</li></Link>
       </ul>

@@ -65,15 +65,15 @@ export const TimeLine = () => {
       <div className="container-years">
         {
           yearCountGoals.map((yearGoal) => {
-            return <div>{yearGoal.year}</div>
+            return <div key={yearGoal.year}>{yearGoal.year}</div>
           })
         } 
       </div>
 
       <div className="time-line">
         {
-          yearCountGoals.map(() => {
-            return <div className="ball"></div>
+          yearCountGoals.map((yearGoal) => {
+            return <div key={yearGoal.year} className="ball"></div>
           })
         }     
       </div>
@@ -82,7 +82,7 @@ export const TimeLine = () => {
         {
           yearCountGoals.map((yearGoal) => {
             return (
-              <div className="card">
+              <div key={yearGoal.year} className="card">
                 <p>{yearGoal.goal}</p>
               </div>
             )

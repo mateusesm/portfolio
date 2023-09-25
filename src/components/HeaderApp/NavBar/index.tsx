@@ -1,6 +1,6 @@
 import { Nav } from "./styled"
 
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 interface NavParams {
   menuRef: {
@@ -12,6 +12,12 @@ interface NavParams {
 }
 
 export const NavBar = ({ menuRef, toggleRef }: NavParams) => {
+  const location = useLocation()
+
+  const handleBorderBottom = () => {
+    alert(location.pathname)
+  }
+
   const handleCloseToggle = () => {
     if (toggleRef.current.classList.contains('active') && menuRef.current.classList.contains('active')) {
       toggleRef.current.classList.remove('active')
@@ -22,12 +28,17 @@ export const NavBar = ({ menuRef, toggleRef }: NavParams) => {
     }
   }
 
+  const handleClickMenu = (event) => {
+    handleBorderBottom()
+    handleCloseToggle()
+  }
+
   return (
     <Nav ref={menuRef} className='menu'>
       <ul className='menu-list'>
-        <Link onClick={handleCloseToggle} to='/'><li>Home</li></Link>
-        <Link onClick={handleCloseToggle} to='/about'><li>Sobre</li></Link>
-        <Link onClick={handleCloseToggle} to='/experiences'><li>Experiências</li></Link>
+        <Link onClick={(event) => handleClickMenu(event)} to='/'><li>Home</li></Link>
+        <Link onClick={(event) => handleClickMenu(event)} to='/sobre'><li>Sobre</li></Link>
+        <Link onClick={(event) => handleClickMenu(event)} to='/experiencias'><li>Experiências</li></Link>
         <Link to='#'><li>Projetos pessoais</li></Link>
         <Link to='#'><li>Entre em contato</li></Link>
       </ul>

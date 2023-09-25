@@ -8,8 +8,8 @@ export const Rotas = ({ avatar_url }: AvatarURL) => {
   return (
     <Routes>
       <Route path='/' element={<SectionHome />} />
-      <Route path='/about' element={<SectionAbout avatar_url={avatar_url} />} />
-      <Route path='/experiences' element={<SectionExperiences />} />
+      <Route path='/sobre' element={<SectionAbout avatar_url={avatar_url} />} />
+      <Route path='/experiencias' element={<SectionExperiences />} />
     </Routes>
   )
 }

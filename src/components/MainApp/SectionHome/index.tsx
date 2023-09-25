@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import { ChevronsDown } from 'lucide-react'
 
 import { Section } from "./styled"
@@ -17,10 +19,12 @@ export const SectionHome = () => {
 
         <p>Desenvolvedor Full Stack com foco em tecnologias <span className="javascript">JavaScript</span> para back-end & front-end</p>
        
-        <button>
-          Saiba mais
-          <ChevronsDown />
-        </button>
+        <Link to='/about'>
+          <button>
+            Saiba mais
+            <ChevronsDown />
+          </button>
+        </Link>
     </Section>
   )
 }

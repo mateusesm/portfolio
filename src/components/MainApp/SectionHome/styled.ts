@@ -32,6 +32,10 @@ export const Section = styled.section`
     }
   }
 
+  a {
+    text-decoration: none;
+  }
+
   button {
     display: flex;
     flex-direction: column;

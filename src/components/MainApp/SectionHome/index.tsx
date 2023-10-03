@@ -26,7 +26,7 @@ export const SectionHome = () => {
         <span className="javascript">JavaScript</span> para back-end & front-end
       </p>
 
-      <Link to="/about">
+      <Link to="/sobre">
         <button>
           Saiba mais
           <ChevronsDown />

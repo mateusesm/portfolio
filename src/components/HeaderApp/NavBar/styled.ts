@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { backgroundColor, textColor } from '../../../assets/colors'
+import styled from 'styled-components';
+import { backgroundColor, textColor } from '../../../assets/colors';
 
 export const Nav = styled.nav`
   display: flex;
@@ -15,7 +15,7 @@ export const Nav = styled.nav`
     list-style: none;
     padding-top: 0.8rem;
     height: auto;
-  
+
     a {
       font-size: 0.8rem;
       margin-left: 1.6rem;
@@ -32,7 +32,7 @@ export const Nav = styled.nav`
     }
   }
 
-  @media(max-width: 980px) {
+  @media (max-width: 980px) {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -54,11 +54,11 @@ export const Nav = styled.nav`
 
     ul {
       flex-direction: column;
-      
+
       li {
         margin-left: 0rem;
         margin-bottom: 4rem;
       }
     }
   }
-`
+`;

@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components'
-import BaseAnimation from '../BaseAnimation/styled'
+import styled, { keyframes } from 'styled-components';
+import BaseAnimation from '../BaseAnimation/styled';
 
 const TypewriterAnimation = keyframes`
   from {
@@ -10,10 +10,10 @@ const TypewriterAnimation = keyframes`
   }
 `;
 
- const Typewriter = styled(BaseAnimation)`
+const Typewriter = styled(BaseAnimation)`
   animation-name: ${TypewriterAnimation};
   white-space: nowrap;
   overflow: hidden;
- `;
+`;
 
- export default Typewriter
+export default Typewriter;

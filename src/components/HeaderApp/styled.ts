@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { backgroundColor, textColor } from '../../assets/colors'
+import styled from 'styled-components';
+import { backgroundColor, textColor } from '../../assets/colors';
 
 export const Header = styled.header`
   display: flex;
@@ -26,11 +26,11 @@ export const Header = styled.header`
     }
   }
 
-  @media(max-width: 490px) {
+  @media (max-width: 490px) {
     a {
       h1 {
         font-size: 1rem;
       }
     }
   }
-`
+`;

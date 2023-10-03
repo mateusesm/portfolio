@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { textColor, backgroundColor } from '../../../assets/colors'
+import styled from 'styled-components';
+import { textColor, backgroundColor } from '../../../assets/colors';
 
 export const ContainerTimeLine = styled.div`
   display: flex;
@@ -49,7 +49,7 @@ export const ContainerTimeLine = styled.div`
 
     div.card {
       width: 100%;
-        
+
       padding: 2.4rem 1rem;
       border: 0.1rem solid ${textColor};
       border-radius: 0.4rem;
@@ -61,7 +61,7 @@ export const ContainerTimeLine = styled.div`
     }
   }
 
-  @media(max-width: 980px) {
+  @media (max-width: 980px) {
     width: 90%;
 
     div.container-years {
@@ -73,7 +73,7 @@ export const ContainerTimeLine = styled.div`
       width: 1.6%;
     }
   }
-  @media(max-width: 730px) {
+  @media (max-width: 730px) {
     width: 90%;
 
     div.container-years {
@@ -82,10 +82,10 @@ export const ContainerTimeLine = styled.div`
 
     div.time-line {
       width: 2%;
-    } 
+    }
   }
 
-  @media(max-width: 560px) {
+  @media (max-width: 560px) {
     width: 100%;
     div.container-years {
       width: 10%;
@@ -93,17 +93,16 @@ export const ContainerTimeLine = styled.div`
 
     div.time-line {
       width: 2.6%;
-    } 
+    }
   }
 
-  @media(max-width: 400px) {
-
+  @media (max-width: 400px) {
     div.container-years {
       width: 14%;
     }
 
     div.time-line {
       width: 3.6%;
-    } 
+    }
   }
-`
+`;

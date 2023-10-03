@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components'
-import BaseAnimation from '../BaseAnimation/styled'
+import styled, { keyframes } from 'styled-components';
+import BaseAnimation from '../BaseAnimation/styled';
 import { textColor } from '../../../assets/colors';
 
 const BlinkAnimation = keyframes`
@@ -11,9 +11,9 @@ const BlinkAnimation = keyframes`
   }
 `;
 
- const Blink = styled(BaseAnimation)`
+const Blink = styled(BaseAnimation)`
   animation-name: ${BlinkAnimation};
   border-right: 0.8rem solid ${textColor};
- `;
+`;
 
- export default Blink
+export default Blink;

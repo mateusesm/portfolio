@@ -1,20 +1,20 @@
-import { ToggleContainer } from "./styled"
+import { ToggleContainer } from './styled';
 
 interface ToggleParams {
-  handleToggle: () => void,
+  handleToggle: () => void;
   toggleRef: {
-    current: HTMLButtonElement
-  }
+    current: HTMLButtonElement;
+  };
 }
 
 export const ToggleButton = ({ handleToggle, toggleRef }: ToggleParams) => {
-    return (
-      <ToggleContainer className='container-toggle'>
-          <button onClick={handleToggle} ref={toggleRef} className="toggle">
-              <div className='first'></div>
-              <div className='second'></div>
-              <div className='third'></div>
-          </button>
-      </ToggleContainer>
-    )
-}
+  return (
+    <ToggleContainer className="container-toggle">
+      <button onClick={handleToggle} ref={toggleRef} className="toggle">
+        <div className="first"></div>
+        <div className="second"></div>
+        <div className="third"></div>
+      </button>
+    </ToggleContainer>
+  );
+};

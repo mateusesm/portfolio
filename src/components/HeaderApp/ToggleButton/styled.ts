@@ -1,10 +1,10 @@
-import styled from 'styled-components'
-import { textColor } from '../../../assets/colors'
+import styled from 'styled-components';
+import { textColor } from '../../../assets/colors';
 
 export const ToggleContainer = styled.div`
   display: none;
 
-  @media(max-width: 980px) {
+  @media (max-width: 980px) {
     display: block;
     align-items: center;
     justify-content: center;
@@ -61,7 +61,7 @@ export const ToggleContainer = styled.div`
     }
   }
 
-  @media(max-width: 490px) {
+  @media (max-width: 490px) {
     button {
       height: 30px;
 
@@ -72,7 +72,7 @@ export const ToggleContainer = styled.div`
 
     button.active {
       div.first {
-        transform: rotate(135deg) translate(0.3rem, -0.3rem); 
+        transform: rotate(135deg) translate(0.3rem, -0.3rem);
       }
 
       div.third {
@@ -80,5 +80,4 @@ export const ToggleContainer = styled.div`
       }
     }
   }
-`
-
+`;

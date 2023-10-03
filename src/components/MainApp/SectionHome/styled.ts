@@ -1,5 +1,9 @@
-import styled from 'styled-components'
-import { backgroundColor, detailColor, textColor } from '../../../assets/colors'
+import styled from 'styled-components';
+import {
+  backgroundColor,
+  detailColor,
+  textColor,
+} from '../../../assets/colors';
 
 export const Section = styled.section`
   display: flex;
@@ -8,7 +12,7 @@ export const Section = styled.section`
   justify-content: center;
   width: 100%;
   height: 100vh;
-  
+
   color: ${textColor};
 
   h1 {
@@ -56,42 +60,42 @@ export const Section = styled.section`
     }
   }
 
-  @media(max-width: 1300px) {
+  @media (max-width: 1300px) {
     h1 {
       font-size: 7rem;
       width: 64rem;
     }
   }
 
-  @media(max-width: 1150px) {
+  @media (max-width: 1150px) {
     h1 {
       font-size: 5.5rem;
       width: 50rem;
     }
   }
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     h1 {
       font-size: 4.5rem;
       width: 40rem;
     }
   }
 
-  @media(max-width: 680px) {
+  @media (max-width: 680px) {
     h1 {
       font-size: 3.5rem;
       width: 32rem;
     }
   }
 
-  @media(max-width: 580px) {
+  @media (max-width: 580px) {
     h1 {
       font-size: 3rem;
       width: 28rem;
     }
   }
 
-  @media(max-width: 490px) {
+  @media (max-width: 490px) {
     h1 {
       font-size: 2.4rem;
       width: 22rem;
@@ -102,10 +106,10 @@ export const Section = styled.section`
     }
   }
 
-  @media(max-width: 400px) {
+  @media (max-width: 400px) {
     h1 {
       font-size: 2rem;
       width: 18.5rem;
     }
   }
-`
+`;

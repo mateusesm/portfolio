@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { detailColor } from '../../../assets/colors'
+import styled from 'styled-components';
+import { detailColor } from '../../../assets/colors';
 
 export const Section = styled.section`
   display: flex;
@@ -21,4 +21,4 @@ export const Section = styled.section`
     display: flex;
     flex-direction: column;
   }
-`
+`;

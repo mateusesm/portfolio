@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { detailColor, textColor } from '../../../assets/colors'
+import styled from 'styled-components';
+import { detailColor, textColor } from '../../../assets/colors';
 
 export const Section = styled.section`
   display: flex;
@@ -9,7 +9,7 @@ export const Section = styled.section`
   padding-top: 10rem;
 
   div.container-about {
-    width: 100%; 
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,16 +57,15 @@ export const Section = styled.section`
     }
   }
 
-  @media(max-width: 1110px) {
+  @media (max-width: 1110px) {
     div.container-about {
-
       aside.text-right {
         width: 50%;
       }
     }
   }
 
-  @media(max-width: 910px) {
+  @media (max-width: 910px) {
     div.container-about {
       margin: 0rem 0.4rem;
 
@@ -78,11 +77,9 @@ export const Section = styled.section`
     }
   }
 
-  @media(max-width: 830px) {
+  @media (max-width: 830px) {
     div.container-about {
-
       aside.text-right {
-
         h2 {
           width: 100%;
         }
@@ -90,7 +87,7 @@ export const Section = styled.section`
     }
   }
 
-  @media(max-width: 730px) {
+  @media (max-width: 730px) {
     div.container-about {
       flex-direction: column;
 
@@ -108,10 +105,8 @@ export const Section = styled.section`
     }
   }
 
-  @media(max-width: 450px) {
-
+  @media (max-width: 450px) {
     div.container-about {
-
       div.image-left {
         img {
           width: 15rem;
@@ -129,4 +124,4 @@ export const Section = styled.section`
       }
     }
   }
-`
+`;

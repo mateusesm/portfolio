@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { textColor, backgroundColor } from '../../assets/colors'
+import styled from 'styled-components';
+import { textColor, backgroundColor } from '../../assets/colors';
 
 export const Footer = styled.footer`
   background-color: ${textColor};
@@ -11,4 +11,4 @@ export const Footer = styled.footer`
   padding: 3rem 2rem;
   width: 100%;
   font-size: 0.8rem;
-`
+`;
